@@ -73,6 +73,11 @@ func mergeCorrection(c Correction) string {
 	return s
 }
 
+// PostPusanUniv is correcting spelling and smth lol yeah~
+// error would be three of these
+// 		- error while sending POST data
+//		- response from Pusan Uni is not 200(status OK)
+//		- invalid input which causes no response from Pusan Uni
 func PostPusanUniv(s string) (string, error) {
 	txt := ""
 	for _, sentence := range splitByWord(s) {
