@@ -1,6 +1,9 @@
 # gohanspell
 
+![](https://github.com/ckcks12/gohanspell/workflows/Go/badge.svg)
+
 `gohanspell` 은 `hanspell` 을 golang 으로 포팅한 라이브러리입니다.
+
 
 ### 사용법
 
@@ -9,8 +12,9 @@ txt, err := PostPusanUniv(`외않되?`)
 if err != nil {
     panic(err)
 }
-log.Println(txt)
+log.Println(txt) // 왜 안 돼
 ```
+
 
 ### 주의
 
